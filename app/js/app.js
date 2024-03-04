@@ -13,4 +13,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Custom JS
 
+	const swiperIMG = new Swiper('.slider-img',{
+		direction: 'vertical',
+		loop: false,
+		speed: 2400,
+		parallax: true,		
+	})
+
+	const swiperText = new Swiper('.slider-text', {
+		direction: 'vertical',
+		loop: false,
+		speed: 2400,
+		mousewheel: {
+			invert: false,
+		},
+		allowTouchMove: false,
+	})
+
+	
+
+	swiperIMG.controller.control = swiperText
+	swiperText.controller.control = swiperIMG
+
+	
+
+	$('.menu-item').click(function(){
+		$('.menu-item').removeClass('menu-item__accent');
+		swiperText.slideTo($('.menu-item').index(this));
+		$(this).addClass('menu-item__accent');		
+	})
+
+
 })

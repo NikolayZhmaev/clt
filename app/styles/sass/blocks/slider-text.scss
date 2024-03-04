@@ -1,0 +1,32 @@
+.slider-text {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+.slider-text__slide {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-text__wrapper {
+    width: 1170px;
+}
+
+.content__subtitle {
+    font-family: versus-my, sans-serif;
+    font-size: 45px;
+    text-align: left;
+    line-height: 65px;
+
+    span {
+        font-size: 85px;
+        
+    }
+}
+
