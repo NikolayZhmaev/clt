@@ -26,7 +26,79 @@
 
     span {
         font-size: 85px;
-        
     }
 }
+
+.content__descr {
+    font-family: roboto-my, sans-serif;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.content__warn {
+    margin-top: 20px;
+    color: $accent;
+    font-size: 12px;
+    display: flex;
+    width: 225px;
+    justify-content: space-between;
+}
+
+.warn-img {
+    width: 45px;
+    height: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.warn-descr {
+    text-align: left;
+}
+
+.main-img {
+    height: 455px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.running-line {
+   
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+}
+
+.line-top {
+    width: 175%;
+    display: flex;
+    white-space: nowrap;
+
+   
+}
+
+.line-top div {
+    width: 100%;
+    animation: running-text 20s linear infinite;
+
+    img {
+        height: 40px;
+        margin-right: 15px;
+        
+    }
+   
+}
+
+@keyframes running-text {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
