@@ -9,6 +9,11 @@ import Swiper from 'swiper';
 import { Parallax, Mousewheel, Controller, Pagination } from 'swiper/modules';
 Swiper.use([Parallax, Mousewheel, Controller, Pagination]);
 
+import {
+	gsap,
+	Power2
+} from 'gsap';
+
 document.addEventListener('DOMContentLoaded', () => {
 
 	// Custom JS
@@ -36,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	swiperText.controller.control = swiperIMG
 
 	
+// menu
 
 	$('.menu-item').click(function(){
 		$('.menu-item').removeClass('menu-item__accent');
