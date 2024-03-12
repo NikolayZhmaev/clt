@@ -113,9 +113,7 @@
     width: 150px;
     position: absolute;
     z-index: 150;
-    top: 0;
-  
-    
+    top: 0;    
 }
 
 .left-decor {
@@ -128,6 +126,129 @@
     top: 0;
     background-image: linear-gradient( to left, rgb(0, 0, 0, 0.9) 10%, rgba(255,255,255,0));	
 }
+
+.text__title {
+    font-family: versus-my, sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    color: $accent;
+    margin-top: 100px;
+}
+
+.text__subtitle {
+    display: flex;
+    justify-content: center;
+    font-family: versus-my, sans-serif;
+    font-size: 48px;
+    color: #fff;
+
+    .tab__img {
+        
+        display: flex;
+        align-items: center;    
+    }
+    
+}
+
+.subtitle-name {
+    margin: 0 20px;
+}
+
+.text__descr {
+    font-family: roboto-my, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    width: 590px;
+    margin: 25px auto;
+}
+
+.text__img {
+    margin-bottom: 50px;
+
+    img {
+        height: 300px;
+    }
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 69%;
+    margin: 0 auto;
+}
+
+.advantages-item {
+    display: flex;
+    width: 180px;
+    margin-bottom: 50px;
+
+}
+
+.advantages-item__img {
+    width: 40px;
+    height: 45px;
+    margin-right: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advantages-item__descr {
+    text-align: left;
+    font-family: roboto-my, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+
+.cooperation {
+    text-align: left;
+}
+
+.cooperation-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: versus-my, sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1;
+    color: #fff;
+
+    .tab__img {
+        height: 100%;
+        display: flex;
+        align-items: center;    
+    }
+}
+
+.cooperation-title__name {
+    margin-right: 20px;    
+}
+
+.cooperation-subtitle {
+    font-family: versus-my, sans-serif;
+    text-align: left;
+    font-size: 36px;
+    color: $accent; 
+}
+
+.cooperation-descr {
+    font-family: roboto-my, sans-serif;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
 
 //animation
 

@@ -6,8 +6,8 @@
 /*jshint esversion: 6*/
 
 import Swiper from 'swiper';
-import { Parallax, Mousewheel, Controller, Pagination } from 'swiper/modules';
-Swiper.use([Parallax, Mousewheel, Controller, Pagination]);
+import { Parallax, Mousewheel, Controller, Pagination, Navigation, EffectFlip, EffectFade, EffectCube } from 'swiper/modules';
+Swiper.use([Parallax, Mousewheel, Controller, Pagination, Navigation, EffectFlip, EffectFade, EffectCube]);
 
 import {
 	gsap,
@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Custom JS
 
-	const swiperIMG = new Swiper('.slider-img',{
+	const swiperIMG = new Swiper('.slider-img', {
 		direction: 'vertical',
 		loop: false,
 		speed: 2400,
-		parallax: true,		
+		parallax: true,
 	})
 
 	const swiperText = new Swiper('.slider-text', {
@@ -35,18 +35,40 @@ document.addEventListener('DOMContentLoaded', () => {
 		allowTouchMove: false,
 	})
 
-	
+	const swiperProduct = new Swiper('.product-slider', {
+		direction: 'horizontal',
+		loop: false,
+		speed: 2400,
+		navigation: {
+			prevEl: '.swiper-button-prev',
+			nextEl: '.swiper-button-next',
+
+		},
+		allowTouchMove: false,
+		effect: 'flip',
+		flipEffect: {
+			slideShadows: false,
+		},
+
+
+
+
+
+
+	})
+
+
 
 	swiperIMG.controller.control = swiperText
 	swiperText.controller.control = swiperIMG
 
-	
-// menu
 
-	$('.menu-item').click(function(){
+	// menu
+
+	$('.menu-item').click(function () {
 		$('.menu-item').removeClass('menu-item__accent');
 		swiperText.slideTo($('.menu-item').index(this));
-		$(this).addClass('menu-item__accent');		
+		$(this).addClass('menu-item__accent');
 	})
 
 
