@@ -1,3 +1,67 @@
+@media (max-width: 1600px) {
+	.content__subtitle  {
+		font-size: 40px;
+
+		span {
+			font-size: 78px;
+		}
+	}
+
+	.tab__items {
+		font-size: 32px;
+	}
+
+	.product-name {
+		font-size: 22px;
+	}
+
+	.product-descr {
+		font-size: 14px;
+	}
+
+	.text__title {
+		font-size: 34px;
+	}
+
+	.text__subtitle {
+		font-size: 44px;
+	}
+
+	.text__descr {
+		font-size: 16px;
+	}
+
+	.cooperation-title {
+		font-size: 44px;
+	}
+
+	.cooperation-subtitle {
+		font-size: 32px;
+	}
+
+	.cooperation-descr {
+		font-size: 18px;
+	}
+
+	.cooperation-button {
+		width: 250px;
+		height: 55px;
+		font-size: 14px;
+	}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
 @media (max-width: 1400px) {
 	.header {
 		height: 125px;
@@ -44,15 +108,63 @@
 	.line-top div {
 		img {
 			height: 25px;
-		}
-	
+		}	
 	}
-	
+
 	.line-bottom div {
 		img {
 			height: 25px;
 		}
 	}
+
+	.tab__items {
+		font-size: 28px;
+	}
+
+	.product-name {
+		font-size: 20px;
+	}
+
+	.product-descr {
+		font-size: 14px;
+	}
+
+	.text__title {
+		font-size: 32px;
+	}
+
+	.text__subtitle {
+		font-size: 38px;
+	}
+
+	.advantages-item__descr {
+		font-size: 14px;
+	}
+
+	.text__img img {
+		height: 29vh;
+	}
+
+	.cooperation-title {
+		font-size: 38px;
+	}
+
+	.cooperation-subtitle {
+		font-size: 28px;
+	}
+
+	.cooperation-descr {
+		font-size: 16px;
+	}
+
+	.cooperation-button {
+		width: 240px;
+		height: 55px;
+		font-size: 14px;
+	}
+
+
+	
 
 	
 }

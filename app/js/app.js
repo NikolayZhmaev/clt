@@ -50,11 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			slideShadows: false,
 		},
 
-
-
-
-
-
 	})
 
 
@@ -65,11 +60,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// menu
 
+	
+
 	$('.menu-item').click(function () {
 		$('.menu-item').removeClass('menu-item__accent');
 		swiperText.slideTo($('.menu-item').index(this));
 		$(this).addClass('menu-item__accent');
 	})
+
+	swiperText.on('slideChange', function(){		
+		$('.menu-item').removeClass('menu-item__accent');
+		$('.menu-item').eq(swiperText.activeIndex).addClass('menu-item__accent');
+	})
+
+	$('.tab__item').click(function(){
+		$('.tab__item').removeClass('menu-item__accent');
+		swiperProduct.slideTo($('.tab__item').index(this));
+		$(this).addClass('menu-item__accent');
+	})
+
+	swiperProduct.on('slideChange', function(){		
+		$('.tab__item').removeClass('menu-item__accent');
+		$('.tab__item').eq(swiperProduct.activeIndex).addClass('menu-item__accent');
+	})
+
+	//parallax
+
+	$('.parallax-slide').on('mousemove', (e) => {
+		const x = e.pageX / $(window).width();
+		const y = e.pageY / $(window).height();
+
+		$('.parallax-slide__bg').css(
+			'transform',
+			'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)'
+		);
+
+		$('.parallax-img').css(
+			'transform',
+			'translate(' + x * 40 + 'px, ' + y * 40 + 'px)'
+		);
+	})
+
+
 
 
 })

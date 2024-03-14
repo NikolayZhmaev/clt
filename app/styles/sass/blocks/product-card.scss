@@ -4,7 +4,7 @@
 }
 
 .product-img {
-    height: 335px;
+    height: 38vh;
 
     img {
         height: 100%;
@@ -20,7 +20,7 @@
 
 .product-rating {
     display: flex;
-    margin: 20px 0;
+    margin: 1vh 0;
     
     img {
         margin-right: 5px;
@@ -38,7 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 2vh;
 }
 
 .property-item {
@@ -49,7 +49,7 @@
     border-left: 1px solid $accent;
     padding-left: 15px;
     width: 40%;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
 }
 
 .item__descr {
