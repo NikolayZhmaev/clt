@@ -125,8 +125,12 @@
 		padding-top: 3.6vh;
 	}
 
+	.product-tab {
+		margin-top: 12vh;
+	}
+
 	.product-img {
-		height: 35vh;
+		height: 33vh;
 	}
 
 	.product-name {
@@ -145,8 +149,20 @@
 		font-size: 36px;
 	}
 
+	.text__descr {
+		margin-bottom: 1vh;
+	}
+
 	.advantages-item__descr {
 		font-size: 14px;
+	}
+
+	.advantages {
+		padding-left: 55px;
+	}
+
+	.advantages-item {
+		width: 160px;
 	}
 
 	.text__img img {
@@ -169,6 +185,11 @@
 		width: 240px;
 		height: 55px;
 		font-size: 14px;
+	}
+
+	.footer {
+		bottom: 20px;
+		padding-top: 20px;
 	}
 
 
