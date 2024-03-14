@@ -64,33 +64,57 @@
 
 @media (max-width: 1400px) {
 	.header {
-		height: 125px;
+		height: 108px;
 	}
 
 	.header-logo {
 		img {
-			height: 86px;
+			height: 72px;
 		}
 	}
 
 	.menu {
 		font-size: 11px;
 	}
+	
+	.content__wrapper {
+		justify-content: start;
+		padding-top: 36px;
+	}
 
 	.content__subtitle {
-		font-size: 36px;
+		font-size: 33px;
 
 		span {
-			font-size: 62px;
+			font-size: 64px;
+			line-height: 0.6;
 		}
 	}
 
 	.content__descr {
 		font-size: 16px;
+		margin-top: 0;
 	}
 
+	.slider-text__img {
+		text-align: center;	
+		
+	}
+
+	.line-bottom {
+		margin-top: 15px;
+	}
+	
+
+	
+
 	.main-img {
-		height: 350px;
+		height: 410px;
+		margin-left: 23px;
+	}
+
+	.content__warn {
+		margin-top: 65px;
 	}
 
 	.first-slide {
@@ -99,11 +123,10 @@
 
 	.running-line {
 		height: 100px;
+		margin-top: 10vh;
 	}
 
-	.running-line {
-		margin-top: 0;
-	}
+	
 
 	.line-top div {
 		img {
