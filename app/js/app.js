@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// menu
 
-	
+
 
 	$('.menu-item').click(function () {
 		$('.menu-item').removeClass('menu-item__accent');
@@ -68,18 +68,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		$(this).addClass('menu-item__accent');
 	})
 
-	swiperText.on('slideChange', function(){		
+	swiperText.on('slideChange', function () {
 		$('.menu-item').removeClass('menu-item__accent');
 		$('.menu-item').eq(swiperText.activeIndex).addClass('menu-item__accent');
 	})
 
-	$('.tab__item').click(function(){
+	$('.tab__item').click(function () {
 		$('.tab__item').removeClass('menu-item__accent');
 		swiperProduct.slideTo($('.tab__item').index(this));
 		$(this).addClass('menu-item__accent');
 	})
 
-	swiperProduct.on('slideChange', function(){		
+	swiperProduct.on('slideChange', function () {
 		$('.tab__item').removeClass('menu-item__accent');
 		$('.tab__item').eq(swiperProduct.activeIndex).addClass('menu-item__accent');
 	})
@@ -100,6 +100,32 @@ document.addEventListener('DOMContentLoaded', () => {
 			'translate(' + x * 40 + 'px, ' + y * 40 + 'px)'
 		);
 	})
+
+	//modal 18+
+
+	$(function ($) {
+		$(function () {
+
+			if (!$.cookie('was')) {
+				$('#info_age_modal').arcticmodal({
+					closeOnOverlayClick: false,
+					closeOnEsc: true
+				});
+			}
+
+			$('.modal_but_no').click(function () {
+				window.location.href = 'http://www.google.ru/';
+				return false
+			});
+			$('.modal_but_yes').click(function () {
+				$.cookie('was', true, {
+					expires: 5, // Сколько хранить куки в днях
+					path: '/'
+				});
+				return false
+			})
+		})
+	})(jQuery)
 
 
 
