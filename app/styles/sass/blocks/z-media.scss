@@ -99,14 +99,7 @@
 	.slider-text__img {
 		text-align: center;	
 		
-	}
-
-	.line-bottom {
-		margin-top: 15px;
-	}
-	
-
-	
+	}	
 
 	.main-img {
 		height: 410px;
@@ -123,10 +116,12 @@
 
 	.running-line {
 		height: 100px;
-		margin-top: 10vh;
+		margin-top: 10vh;		
 	}
 
-	
+	.line-bottom {
+		margin-top: 15px;
+	}		
 
 	.line-top div {
 		img {
@@ -140,20 +135,52 @@
 		}
 	}
 
+	.running-line {
+		display: none;
+	}
+
 	.tab__items {
 		font-size: 28px;
 	}
 
+	.product-wrapper {
+		height: 73vh;		
+	}
+
 	.product-slider {
-		padding-top: 3.6vh;
+		padding-top: 1vh;
 	}
 
 	.product-tab {
 		margin-top: 12vh;
 	}
 
+	.product-slide {
+		flex-direction: column;
+	}
+
+	.product-card {
+		display: flex;
+		width: 100%;
+		height: 40%;
+	}
+
+	.product-descr__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.product-property {
+		flex-wrap: nowrap;
+	}
+
+	.property-item {
+		margin-bottom: 0;
+	}
+
 	.product-img {
-		height: 33vh;
+		height: 35vh;
 	}
 
 	.product-name {
@@ -162,14 +189,15 @@
 
 	.product-descr {
 		font-size: 14px;
-	}
+	}	
 
 	.text__title {
-		font-size: 30px;
+		font-size: 28px;
 	}
 
 	.text__subtitle {
-		font-size: 36px;
+		font-size: 32px;
+		line-height: 1.3;
 	}
 
 	.text__descr {
@@ -193,7 +221,7 @@
 	}
 
 	.cooperation-title {
-		font-size: 38px;
+		font-size: 34px;
 	}
 
 	.cooperation-subtitle {
@@ -205,13 +233,18 @@
 	}
 
 	.cooperation-button {
-		width: 240px;
-		height: 55px;
-		font-size: 14px;
+		width: 200px;
+		height: 50px;
+		font-size: 12px;
 	}
 
 	.footer {
-		bottom: 20px;
+		bottom: 0px;		
+		background: rgba($color: #000000, $alpha: 0.8);
+		height: 10vh;
+	}
+
+	.footer-topline {
 		padding-top: 20px;
 	}
 

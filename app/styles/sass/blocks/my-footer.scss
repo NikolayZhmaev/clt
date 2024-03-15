@@ -4,16 +4,20 @@
     font-weight: 400;
     font-size: 12px;
     text-align: left;
-    color: #fff;
-    border-top: 1px solid #fff;
-    opacity: 0.6;
-    padding-top: 30px;
+    color: #fff;    
+    opacity: 0.6;    
     bottom: 40px;
+    width: 100vw;
 
     a {
         text-decoration: none;
         color: #fff;
     }
+}
+
+.footer-topline {
+    border-top: 1px solid #fff;
+    padding-top: 30px;
 }
 
 .footer__item {
@@ -33,4 +37,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.footer-img__w {
+    height: 40px;
+    width: 40px;
+    
 }
