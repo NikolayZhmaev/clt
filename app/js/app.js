@@ -101,31 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		);
 	})
 
-	//modal 18+
+	
 
-	$(function ($) {
-		$(function () {
 
-			if (!$.cookie('was')) {
-				$('#info_age_modal').arcticmodal({
-					closeOnOverlayClick: false,
-					closeOnEsc: true
-				});
-			}
 
-			$('.modal_but_no').click(function () {
-				window.location.href = 'http://www.google.ru/';
-				return false
-			});
-			$('.modal_but_yes').click(function () {
-				$.cookie('was', true, {
-					expires: 5, // Сколько хранить куки в днях
-					path: '/'
-				});
-				return false
-			})
-		})
-	})(jQuery)
+
 
 
 

@@ -9,14 +9,49 @@
 	<title><!--#echo var="title" --></title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="images/dist/preview.jpg">
 
-	<link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal-0.3.css">
 	
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<!-- cookie -->
+	<script src="https://yandex.st/jquery/cookie/1.0/jquery.cookie.min.js"></script>
+	<!-- modal plugin -->
+	<script src="js/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+	<link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal-0.3.css">
+
 	<link rel="stylesheet" href="css/app.min.css">
+
+	<script>
+		(function($) {
+			$(function() {
+		
+				if (!$.cookie('was')) {
+					$('#info_age_modal').arcticmodal({
+						closeOnOverlayClick: false,
+						closeOnEsc: true
+					});
+				}
+		
+				$('.modal_but_no').click(function() {
+					window.location.href = 'http://www.google.ru/';
+					return false
+				});
+		
+				$('.modal_but_yes').click(function() {
+					$.cookie('was', true, {
+						expires: 5, // Сколько хранить куки в днях
+						path: '/'
+					});
+					return false
+				})
+			})
+		})(jQuery)
+		</script>
 
 </head>
 
