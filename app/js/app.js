@@ -61,10 +61,21 @@ document.addEventListener('DOMContentLoaded', () => {
 	// menu
 
 
-
 	$('.menu-item').click(function () {
+		var num = $('.menu-item').index(this);
+		var difference =Math.abs(num - swiperText.activeIndex);		
 		$('.menu-item').removeClass('menu-item__accent');
-		swiperText.slideTo($('.menu-item').index(this));
+
+
+		if (difference <= 2) {
+			swiperText.slideTo(num, 2400);
+		} else {
+			swiperText.slideTo(Math.abs(num-1), 2400);
+			setTimeout(function () {
+				swiperText.slideTo(num, 2400)
+			}, 1500);			
+		}
+		
 		$(this).addClass('menu-item__accent');
 	})
 
@@ -74,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	$('.tab__item').click(function () {
-		$('.tab__item').removeClass('menu-item__accent');
+		$('.tab__item').removeClass('menu-item__accent');		
 		swiperProduct.slideTo($('.tab__item').index(this));
 		$(this).addClass('menu-item__accent');
 	})
@@ -92,12 +103,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		$('.parallax-slide__bg').css(
 			'transform',
-			'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)'
+			'translate(-' + x * 10 + 'px, -' + y * 10 + 'px)'
 		);
 
 		$('.parallax-img').css(
 			'transform',
-			'translate(' + x * 40 + 'px, ' + y * 40 + 'px)'
+			'translate(' + x * 20 + 'px, ' + y * 20 + 'px)'
 		);
 	})
 
