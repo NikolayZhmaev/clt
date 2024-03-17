@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			swiperText.slideTo(Math.abs(num-1), 2400);
 			setTimeout(function () {
 				swiperText.slideTo(num, 2400)
-			}, 1500);			
+			}, 1900);			
 		}
 		
 		$(this).addClass('menu-item__accent');

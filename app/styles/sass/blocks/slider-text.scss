@@ -134,13 +134,15 @@
 
 .left-decor {
     left: 0;
-    background-image: linear-gradient( to right, rgb(0, 0, 0, 0.9) 40%, rgba(255,255,255,0));
+    background-image: linear-gradient( to right , rgb(0, 0, 0, 0.9) 40%, rgba(255,255,255,0));
 }
 
 .right-decor {
     right: 0;
     top: 0;
-    background-image: linear-gradient( to left, rgb(0, 0, 0, 0.9) 40%, rgba(255,255,255,0));	
+    background-image: linear-gradient( to left, rgb(0, 0, 0, 0.9) 40%, rgba(255,255,255,0));
+   
+   
 }
 
 .text__title {
