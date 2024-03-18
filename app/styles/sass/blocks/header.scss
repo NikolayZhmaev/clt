@@ -1,4 +1,5 @@
-.header {
+.header,
+.header-mobile {
     position: absolute;
     display: flex;
     align-items: center;
@@ -12,6 +13,10 @@
     right: 0;
     background-image: linear-gradient( to bottom, rgb(0, 0, 0, 0.5) 40%, rgba(255,255,255,0));	
     
+}
+
+.header-mobile {
+    display: none;
 }
 
 .header-row {
@@ -50,6 +55,16 @@
     li:hover {
         color: $accent;
         transition: all 0.3s;
+    }
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: $accent;
+        transition: all 0.3s; 
     }
 }
 

@@ -2,6 +2,15 @@
     height: 600px;
     justify-content:left;
     padding-top: 60px;
+    position: relative;
+}
+
+.cooperation-mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .cooperation-wrapper {

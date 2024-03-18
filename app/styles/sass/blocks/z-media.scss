@@ -1,5 +1,5 @@
 @media (max-width: 1600px) {
-	.content__subtitle  {
+	.content__subtitle {
 		font-size: 40px;
 
 		span {
@@ -48,9 +48,7 @@
 		height: 55px;
 		font-size: 14px;
 	}
-
 }
-
 
 @media (max-width: 1400px) {
 	.header {
@@ -66,7 +64,7 @@
 	.menu {
 		font-size: 11px;
 	}
-	
+
 	.content__wrapper {
 		justify-content: start;
 		padding-top: 36px;
@@ -87,9 +85,8 @@
 	}
 
 	.slider-text__img {
-		text-align: center;	
-		
-	}	
+		text-align: center;
+	}
 
 	.main-img {
 		height: 410px;
@@ -107,38 +104,39 @@
 	.running-line {
 		bottom: 0;
 		height: 100px;
-		margin-top: 4vh;		
+		margin-top: 4vh;
 	}
 
 	.line-bottom {
 		margin-top: 15px;
-	}		
+	}
 
 	.line-top div {
 		img {
 			height: 25px;
-		}	
+		}
 	}
 
 	.line-bottom div {
 		img {
 			height: 25px;
 		}
-	}	
+	}
 
 	.tab__items {
 		font-size: 28px;
 	}
 
 	.product-wrapper {
-		height: 73vh;		
+		height: 73vh;
 	}
 
 	.product-slider {
 		padding-top: 2vh;
 	}
 
-	.swiper-button-next, .swiper-button-prev {
+	.swiper-button-next,
+	.swiper-button-prev {
 		width: 40px;
 		height: 40px;
 	}
@@ -177,7 +175,7 @@
 
 	.product-name {
 		font-size: 20px;
-	}	
+	}
 
 	.text__title {
 		font-size: 28px;
@@ -227,16 +225,14 @@
 	}
 
 	.footer {
-		bottom: 0px;		
-		background-image: linear-gradient( to top, rgb(0, 0, 0, 0.7) 50%, rgba(255,255,255,0));	
+		bottom: 0px;
+		background-image: linear-gradient(to top, rgb(0, 0, 0, 0.7) 50%, rgba(255, 255, 255, 0));
 		height: 12vh;
-		
 	}
 
 	.footer-topline {
 		padding-top: 20px;
 	}
-	
 }
 
 @media (max-width: 1220px) {
@@ -251,12 +247,12 @@
 
 	.advantages {
 		width: 80%;
-		padding-left: 65px;		
+		padding-left: 65px;
 	}
 
 	.item__descr {
 		font-size: 12px;
-	}	
+	}
 
 	.cooperation-title {
 		font-size: 28px;
@@ -281,7 +277,7 @@
 	}
 
 	.text__title {
-		font-size: 26px;		
+		font-size: 26px;
 	}
 
 	.text__subtitle {
@@ -330,7 +326,6 @@
 		height: 331px;
 		margin-top: 72px;
 		margin-left: 0;
-		
 	}
 
 	.content__warn {
@@ -340,7 +335,6 @@
 	.content__wrapper {
 		padding-top: 60px;
 	}
-	
 }
 
 @media (max-height: 650px) {
@@ -351,23 +345,21 @@
 	.running-line {
 		display: none;
 	}
-	
 }
 
 @media (max-height: 580px) {
 	.slider-container {
 		display: none;
-	}	
+	}
 	.landing-container {
 		display: block;
 	}
-	
 }
 
 @media (max-width: 1000) {
 	.menu {
 		margin-bottom: 0;
-	}	
+	}
 }
 
 @media (max-width: 992px) {
@@ -375,8 +367,151 @@
 		display: none;
 	}
 
+	.header {
+		display: none;
+	}
+
+	.header-mobile {
+		display: flex;
+	}
+
 	.landing-container {
 		display: block;
 	}
+
+	.advantages-item__img {
+		width: 37px;
+		height: 42px;
+	}
+
+	
+}
+
+@media (max-width: 768px) {
+	.landing-promo {
+		height: 700px;
+		.row {
+			display: none;
+		}
+	}
+
+	.promo-mobile {
+		display: flex;
+	}
+
+	.promo__subtitle {
+		text-align: center;
+		font-size: 20px;
+		span {
+			font-size: 38px;
+		}
+	}
+
+	.promo-text__img {
+		width: 300px;
+		height: 300px;
+	}
+
+	.promo-img {
+		height: 100%;
+		width: 100%;
+	}
+
+	.promo__descr {
+		text-align: center;
+	}
+
+	.min-product-card {
+		width: 84%;
+	}
+
+	.min-product-img {
+		height: 236px;
+	}
+
+	.advantages__img img {
+		height: 160px;
+	}
+
+	.advantages-items {
+		justify-content: left;
+		width: 89%;
+		margin-left: 58px;
+	}
+
+	.advantages-item {
+		width: 150px;
+	}
+
+	.advantages__descr {
+		width: 100%;
+	}
+
+	.advantages-item__descr {
+		font-size: 12px;
+	}
+
+	.advantages-item__img {
+		width: 28px;
+	}
+
+	.landing-cooperation {
+		.row {
+			display: none;
+		}
+
+		.cooperation-mobile {
+			display: flex;
+		}
+	}
+
+	.cooperation-min__title {
+		font-size: 18px;
+	}
+
+	.cooperation-min__subtitle {
+		font-size: 20px;
+
+	}
+
+	.cooperation-descr {
+		text-align: center;
+	}
+
+	.footer__company {
+		text-align: center;
+	}
+
+	.footer-img__w {
+		width: 60px;
+		height: 60px;
+	}
+
+	.footer__img {
+		margin-right: 17px;
+		
+	}
+
+	.footer-first__img {
+		margin-right: 17px;
+		width: 32px;
+		height: 32px;
+	}
+	
+	.landing-product {
+		height: 668px;
+	}
+}
+
+@media (max-width: 583px) {
+
+	
+		.menu {
+			display: none;
+		}
+	
+}
+
+@media (max-width: 530px) {
 	
 }
