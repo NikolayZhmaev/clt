@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const swiperProductMin = new Swiper('.product-min-slider', {
 		direction: 'horizontal',
-		loop: true,
+		loop: false,
 		speed: 2400,
 		navigation: {
 			prevEl: '.swiper-button-prev',
@@ -104,6 +104,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	swiperProduct.on('slideChange', function () {
 		$('.tab__item').removeClass('menu-item__accent');
 		$('.tab__item').eq(swiperProduct.activeIndex).addClass('menu-item__accent');
+	})
+
+	
+
+	swiperProductMin.on('slideChange', function () {
+		$('.tab-min__item').removeClass('menu-item__accent');				
+
+		if (swiperProductMin.activeIndex <= 1) {			
+			$('.tab-min__item').eq(0).addClass('menu-item__accent');			
+		} else {			
+			$('.tab-min__item').eq(1).addClass('menu-item__accent');			
+		}	
 	})
 
 	//parallax
