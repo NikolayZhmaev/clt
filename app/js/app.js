@@ -52,6 +52,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	})
 
+	const swiperProductMin = new Swiper('.product-min-slider', {
+		direction: 'horizontal',
+		loop: true,
+		speed: 2400,
+		navigation: {
+			prevEl: '.swiper-button-prev',
+			nextEl: '.swiper-button-next',
+
+		},
+	})
+
 
 
 	swiperIMG.controller.control = swiperText
