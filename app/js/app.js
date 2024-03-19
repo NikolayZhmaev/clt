@@ -61,6 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			nextEl: '.swiper-button-next',
 
 		},
+
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
 	})
 
 
@@ -74,19 +79,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	$('.menu-item').click(function () {
 		var num = $('.menu-item').index(this);
-		var difference =Math.abs(num - swiperText.activeIndex);		
+		var difference = Math.abs(num - swiperText.activeIndex);
 		$('.menu-item').removeClass('menu-item__accent');
 
 
 		if (difference <= 2) {
 			swiperText.slideTo(num, 2400);
 		} else {
-			swiperText.slideTo(Math.abs(num-1), 2400);
+			swiperText.slideTo(Math.abs(num - 1), 2400);
 			setTimeout(function () {
 				swiperText.slideTo(num, 2400)
-			}, 1900);			
+			}, 1900);
 		}
-		
+
 		$(this).addClass('menu-item__accent');
 	})
 
@@ -96,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	$('.tab__item').click(function () {
-		$('.tab__item').removeClass('menu-item__accent');		
+		$('.tab__item').removeClass('menu-item__accent');
 		swiperProduct.slideTo($('.tab__item').index(this));
 		$(this).addClass('menu-item__accent');
 	})
@@ -106,16 +111,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('.tab__item').eq(swiperProduct.activeIndex).addClass('menu-item__accent');
 	})
 
-	
+
 
 	swiperProductMin.on('slideChange', function () {
-		$('.tab-min__item').removeClass('menu-item__accent');				
+		$('.tab-min__item').removeClass('menu-item__accent');
 
-		if (swiperProductMin.activeIndex <= 1) {			
-			$('.tab-min__item').eq(0).addClass('menu-item__accent');			
-		} else {			
-			$('.tab-min__item').eq(1).addClass('menu-item__accent');			
-		}	
+		if (swiperProductMin.activeIndex <= 1) {
+			$('.tab-min__item').eq(0).addClass('menu-item__accent');
+		} else {
+			$('.tab-min__item').eq(1).addClass('menu-item__accent');
+		}
 	})
 
 	//parallax
@@ -135,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		);
 	})
 
-	
+
 
 
 

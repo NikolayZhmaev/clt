@@ -119,3 +119,27 @@
     bottom: -10px;
     z-index: 10;
 }
+
+.slider-pagination {
+
+    display: none;
+
+    .swiper-pagination-bullet {
+        background: #fff;
+        opacity: 0.5;
+        
+    }
+    
+    .swiper-pagination-bullet-active {
+        background: $accent;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+

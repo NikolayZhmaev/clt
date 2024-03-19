@@ -71,3 +71,12 @@
 .menu-item__accent {
     color: $accent;
 }
+
+.header-logo__only {
+    display: none;
+    text-align: center;
+    img {
+        width: 60px;
+    }
+    
+}
