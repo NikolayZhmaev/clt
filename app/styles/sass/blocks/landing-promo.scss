@@ -56,6 +56,7 @@
     overflow: hidden;
     margin-top: 37px;
     opacity: 0.6;
+    z-index: 2;
 }
 
 .promo__left-decor,
@@ -64,7 +65,8 @@
     width: 120px;
     position: absolute;
     z-index: 150;
-    top: 0;   
+    top: 0;
+    z-index: 3;   
 
 }
 
@@ -116,4 +118,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;  
+}
+
+.promo-bottomline {
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+    position: absolute;
+    bottom: -15px;
+    z-index: 1;
 }

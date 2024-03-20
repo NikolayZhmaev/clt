@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const swiperProductMin = new Swiper('.product-min-slider', {
 		direction: 'horizontal',
 		loop: false,
-		speed: 2400,
+		speed: 2000,
 		navigation: {
 			prevEl: '.swiper-button-prev',
 			nextEl: '.swiper-button-next',
