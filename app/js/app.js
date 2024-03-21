@@ -129,11 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const x = e.pageX / $(window).width();
 		const y = e.pageY / $(window).height();
 
-		$('.parallax-slide__bg').css(
-			'transform',
-			'translate(-' + x * 10 + 'px, -' + y * 10 + 'px)'
-		);
-
+		
 		$('.parallax-img').css(
 			'transform',
 			'translate(' + x * 20 + 'px, ' + y * 20 + 'px)'
